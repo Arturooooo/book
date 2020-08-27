@@ -1,0 +1,245 @@
+/* MEDIA QUERIES */
+
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1365px) {
+   body {
+	font-size: 14px !important;
+}
+    
+    
+    .positivo {
+        
+        letter-spacing: 1.44px;
+    }
+    
+   .inicio-hombre-img {
+   
+width: 19.625em; 
+ 
+ 
+}
+ }
+
+
+/* (1920x1080) WXGA Display */
+@media screen and (min-width: 1920px){
+   body {
+	font-size: 20px !important;
+}
+    
+    
+
+/* DISPLAY 1920 */    
+    .invisible-1920 {
+        
+        
+        visibility: hidden;
+    }
+    
+    .invisible-otros {
+    
+   visibility: visible;
+}   
+    
+    .cont-xl {max-width: 100% !important;}
+    .cont-xl .col-3 {max-width: 18% !important;}
+    
+
+/* NAVBAR */    
+    
+    .navbar {
+    max-height: 65px;
+    font-size: 1.13em;
+    font-weight: 700;
+    padding: 0 4.75em 0;
+}
+    
+    
+
+/* margins y paddings */    
+        .px-65 {
+  
+    padding: 0 4.75em 0;
+}
+    
+        .p-mapa {
+    
+    padding-top: 2em;
+}
+    
+    .p4-1920 {
+        
+        padding: 1em 1.5em 1em !important;
+    }
+    
+    
+    .positivo {
+        
+        letter-spacing: 7.9px;
+    }
+    
+
+
+    /* DIAPO 1 INICIO */ 
+     .inicio-hombre-img {
+   
+width: 19.625em; 
+ 
+}
+    
+    .btn-lg {
+        
+        font-size: 1.5em !important;
+    }
+    
+    
+    .btn-inicio {
+    
+margin-top: 1em;
+}
+    
+    
+    .map-anim img {
+    opacity: 0;
+    width: 70em;
+    
+    }
+    
+    .p24 {
+        font-size: 1.4em;} 
+    
+    .f-vulnerabilidad h2 {
+        font-size: 2em;} 
+    .f-vulnerabilidad h3 {
+        font-size: 1.7em;}
+    
+    
+    .tus-derechos {
+        
+        font-size: 4.94em !important;
+    }
+    
+    
+    /* DIAPO 17 SEQUIA */ 
+.sequia-100 {
+     height: calc(100vh - 24.5em) !important;
+    
+}
+    
+    .p25 {
+        
+        font-size: 2.5em !important;
+    }
+    
+    .sequia .col-3 {max-width: 40% !important;}
+
+
+.sequia h5 {
+    
+    font-size: 1.3em;
+
+    font-weight: 800;
+}
+    
+  /* DIAPO 19  */ 
+    
+    .d19 .p24 {
+        
+  font-size: 1.3em;
+    }   
+    
+    .cd-ninos-19 h3 {
+        
+  font-size: 2.2em;
+    } 
+    
+    
+       /* DIAPO ilustraciones parte 2  */ 
+    .meta1 {
+    
+    width: 48.75em; height: auto
+}
+    
+      /* DIAPO 27  */ 
+    .cajas-mapas {
+    
+position: absolute; 
+    
+    bottom: 5%;
+        left: 10%;
+    
+} 
+    
+         /* DIAPO GLASGOW  */ 
+    
+    .pin-glasgow {
+    
+position: absolute; top: 35%; left: 28%; height: 1.5em; 
+}
+    
+    .glasgow-neg {
+    
+    margin-left: -2em;
+        
+}
+    
+    .width-glasgow {
+    
+    width: 60%
+}
+    
+    
+    .pin-glasgow2 {
+    
+position: absolute; top: 7%; right: 45%; height: 1.5em; 
+}
+
+.pin-glasgow3 {
+    
+position: absolute; bottom: 23%; left: 19%; height: 1.5em; 
+}
+    
+    
+    
+    /* Elementos diapo FLOR*/
+
+    .img-flor {
+    
+   width: 28em; margin-top: 3.3em
+}
+    
+
+.flor1 {
+    
+    width: 6.875em; position: absolute; bottom: 16.5%; right: 40.5%;
+}
+.flor2 {
+    
+    width: 10em; position: absolute; bottom: 12.4%; right: 48%;
+}
+.flor3 {
+    
+    width: 11.25em; position: absolute; bottom: 27.5%; left: 31.5%;
+}
+.flor4 {
+    
+    width: 6.875em;  position: absolute; bottom: 51%; right: 54.2%;
+}
+.flor5 {
+    width: 10em;  position: absolute; bottom: 55%; right: 43.59%;
+    
+}
+.flor6 {
+    
+    width: 6.875em;  position: absolute; bottom: 51%; right: 36.59%;
+}
+.flor7 {
+    
+    width: 11.25em; position: absolute; bottom: 27.5%; right: 31.5%;
+}
+
+
+}
+
+
+

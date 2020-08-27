@@ -1,0 +1,2071 @@
+ /*  Preloader. Faltan añadir imágenes */
+:root:before {
+  content:
+      
+      url(../imgs/cara1.svg)
+       url(../imgs/cara2.svg)
+       url(../imgs/cara3.svg)
+       url(../imgs/cara4.svg)
+       url(../imgs/cara5.svg)
+      url(../imgs/vulnerabilidad2.jpg);
+      ;
+  /*  fallback */
+  background-image:
+   
+      
+      url(../imgs/cara1.svg)
+       url(../imgs/cara2.svg)
+       url(../imgs/cara3.svg)
+       url(../imgs/cara4.svg)
+       url(../imgs/cara5.svg);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}  
+
+
+
+
+body {
+	background-image: url(../imgs/bg1.jpg);
+        height: 100vh;
+            background-size: cover;
+            background-position: center;
+	font-family: 'Work Sans', sans-serif;
+       font-size: 16px;
+}
+
+.invisible-otros {
+    
+    visibility: hidden;
+}
+
+.none-otros {
+    
+    visibility: hidden;
+}
+
+
+/* Controles */
+.carousel-control-prev {
+    position: fixed;
+    top: 47%;
+    left: 3%;
+    z-index: 40;
+    transform: translate(0%, -50%);
+}
+
+.carousel-control-next {
+   position: fixed;
+    top: 47%;
+  right: 3%;
+    z-index: 40;
+    transform: translate(0%, -50%);
+}
+
+
+.centro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+/* ESTILOS FONTS  */
+
+h1 {
+     font-family : Work Sans;
+  font-weight : 800;
+  font-size : 5.375em;
+  letter-spacing : 2.84px;
+  color : #FFFFFF;
+  color : rgb(255, 255, 255);
+}
+
+h2 {
+    
+      font-family : Work Sans;
+  font-size : 2.625em;
+  color : #FFFFFF;
+  color : rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+h3 {
+    
+      font-family : Work Sans;
+  font-size : 2.2em;
+
+  color : rgb(255, 255, 255) !important;
+    font-weight: 300;
+}
+
+
+h4 {
+    
+      font-family : Work Sans;
+  font-size : 3.75em;
+
+  color : rgb(255, 255, 255) !important;
+    font-weight: 600;
+}
+
+
+
+.p33 {
+    
+     font-size : 2.0625em;
+      color : rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 0px;
+
+}
+
+.p24 {
+    
+     font-size : 1.5em;
+      color : rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 0px;
+
+}
+
+.p20 {
+    
+     font-size : 1.2em;
+      color : rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 1.2em;
+     margin: 0px;
+
+}
+
+.p10 {
+    
+     font-size : 0.6em;
+      color : rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 1.2em;
+     margin: 0px;
+
+}
+
+.p65 {font-size: 3.75em}
+
+
+
+strong {
+    font-weight: 600;
+}
+
+.white {
+    color: white;
+}
+
+strong {
+    
+    font-weight: 700 !important;
+}
+
+
+/* MÁRGENES Y PADDINGS  */
+.mt-65 { margin-top: 4.0625em}
+.pt-65 { padding-top: 4.0625em}
+
+.pt-encuesta { padding-top: 3.0625em}
+.p-mapa {
+    
+    padding-top: 2em;
+}
+
+
+
+
+
+.mb-65 {margin-bottom: 65px;}
+
+ 
+
+/* NAVBAR CUSTOM  */
+ .navbar {
+  max-height: 65px;
+     font-size: 1.13em;
+     font-weight: 700;
+
+}
+
+.navbar-brand {
+  padding: 0 0 13px 0;
+  height: 65px;
+  line-height: 65px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 15.5px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 19px;
+    padding-bottom: 19px;
+    line-height: 27px;
+     
+  }
+    
+    .navbar-expand-md .navbar-nav .nav-link {
+        
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 0px !important;
+} 
+    
+    
+}
+
+
+   /* NAVBAR Explandible  */
+    .info-menu {
+  display: flex;
+max-width: 100%;
+  overflow: hidden;
+  transition: max-width 0.2s ease-out;
+
+       
+}
+    
+    .hide{
+        max-width: 0;
+  display: none !important;
+}
+
+.barra-izq {
+    
+        position: relative;
+    right: -100px;
+ 
+    -webkit-animation: slide-izq 1s forwards;
+   
+    animation: slide-izq 0.5s forwards;
+ 
+    
+} 
+
+@-webkit-keyframes slide-izq {
+    100% { right: 0; }
+}
+
+@keyframes slide-izq {
+    100% { right: 0; }
+}
+
+/* Custom heights  */
+
+.h-100 {
+      height: calc(100vh - 65px) !important;
+    }
+
+.h-100-2 {
+      height: calc(100vh - 135px) !important;
+    }
+
+
+.h-100-meta {
+      height: calc(100vh - 12em) !important;
+    }
+
+.vl {
+  border-left: 1.2px solid #1a1a1a;
+  height: 36px;
+    margin: 0 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #1a1a1a;
+    line-height: 20px;
+}
+
+/* línea antes de texto */
+.der-izq::before {
+  content:'';
+  position: absolute;
+  background-color: #85C1E9;
+  width: 3px;
+  height: 90%;
+  bottom: 0;
+  left:7px; 
+}
+
+/* línea después de texto*/
+.der-izq::after{
+  content:'';
+  position: absolute;
+  background-color: #85C1E9;
+  width: 3px;
+  height: 90%;
+  bottom: 0;
+  right:5px;
+ 
+}
+
+.numeroCirculo {
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+  
+
+    background: transparent;
+    border: 1.2px solid #1a1a1a;
+  
+    text-align: center;
+
+}
+
+
+
+/* Botones*/
+.btn-inicio {
+    
+ background-color: #FEDA56; color: #0071BC; font-weight: 500; margin-top: 2em; border-color: transparent;
+}
+
+
+    .btn-inicio:hover {
+   
+   color: #0071bc;
+    background-color: #feda56;
+    border-color: transparent;
+    border: solid 1px;
+      font-weight : 500;
+}
+
+
+
+.btn-amarillo {
+    color: #0071bc;
+    background-color: #feda56;
+    border-color: #feda56;
+      font-family : Work Sans;
+  font-weight : 500;
+
+    border-radius: 0.75rem;
+}
+
+.btn-amarillo:hover {
+   
+   color: #feda56;
+    background-color: transparent;
+    border-color: #feda56;
+    border: solid 1px;
+      font-weight : 400;
+}
+
+/* Fondo de textos en diapo 8*/
+
+.btn-sentimientos {
+    color: #fff;
+   
+      font-family : Work Sans;
+  font-weight : 700;
+  font-size : 1.4em;
+    border-radius: 0.75rem;
+    width: 8em;
+    
+    display: inline-block;
+   
+   
+    text-align: center;
+    vertical-align: middle;
+  
+   
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+  
+ 
+    transition: color .15s ease-in-out;
+
+}
+
+
+
+
+/* Barras diapo 4*/
+
+.rec-amarillo {
+  height: 240px;
+  width: 120px;
+  background-color: #feda56;  
+}
+
+.rec-verde {
+  height: 96px;
+  width: 120px;
+  background-color: #b3f2a4;
+}
+
+.rec-naranja {
+  height: 72px;
+  width: 120px;
+  background-color: #fbb03b;
+}
+
+.rec-azul {
+  height: 80px;
+ margin: 0 5px;
+  background-color: #5dd5e6;
+    border-radius: 15px;
+}
+
+.rec-gl-1 {
+  height: 3.75em;
+ margin: 0 5px;
+  background-color: #5dd4e5;
+  
+}
+
+.rec-gl-2 {
+  height: 6.25em;
+ margin: 0 5px;
+  background-color: #5dd4e5;
+ 
+}
+
+.rec-bol-1 {
+  height: 11.25em;
+  background-color: #fdd956;
+ 
+}
+.rec-bol-2 {
+  height: 5em;
+  background-color: #fdd956;
+ 
+}
+
+/* IMAGENES*/
+
+/* Img diapo 1*/
+.inicio-hombre {
+   
+    margin-bottom: 65px;
+ 
+}
+.inicio-hombre-img {
+   
+width: 17.625em; 
+    height: auto;
+ 
+}
+
+.hombre-q {
+   
+width: 12.625em; 
+    height: auto;
+ 
+}
+
+.hombre-3 {
+   
+width: 10.625em; 
+    height: auto;
+    margin-right: -1.5em;
+ 
+}
+
+.hombre-fin {
+   
+width: 18.625em; 
+    height: auto;
+ 
+}
+
+.tus-derechos {
+    
+    font-size: 4.33em;
+}
+
+
+
+
+
+
+
+.genz-1 { background-image: url(../imgs/z11.jpg);
+    background-repeat: no-repeat;
+    height: 45vh;
+    background-size: cover;
+    background-position: center; z-index: 3;
+border-right: 5px solid; 
+    -o-border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat; border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;
+    }
+
+.genz-2 { background-image: url(../imgs/z22.jpg);   background-repeat: no-repeat;
+     height: 45vh;
+    background-size: cover;
+    background-position: center; z-index: 2; border-right: 5px solid; 
+    -o-border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;
+   }
+.genz-3 { background-image: url(../imgs/z33.jpg);   background-repeat: no-repeat ; 
+     height: 45vh;
+    background-size: cover;
+    background-position: center; z-index: 1;
+  -o-border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;
+}
+
+/* Imgs bg diapo 5*/
+
+
+
+.bg-derechos1 {
+    
+   
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+     border-image: url(../imgs/border.png) 0% 0% 0% 100% repeat;
+    border-left: white solid 4px; 
+   
+     -webkit-animation-name: animateSectionBackground;
+    
+    animation-timing-function: ease-out;
+
+animation-duration: 8s;
+animation-direction: alternate;
+    
+    
+    
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: 1;
+ 
+  animation-fill-mode:forwards; /*when the spec is finished*/
+-webkit-animation-fill-mode: forwards;
+
+  
+}
+
+
+
+@keyframes animateSectionBackground {
+   0% { background-image: url(../imgs/derechos-1.jpg); } 
+    35% { background-image: url(../imgs/derechos-1.jpg); } 
+   
+  
+    
+  55% { background-image: url(../imgs/derechos-2.jpg); } 
+    
+    100% { background-image: url(../imgs/derechos-2.jpg); }
+  
+}
+
+.bg-derechos2 {
+    animation-duration: 1s;
+    background-image: url(../imgs/derechos-2.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: center;
+    height: 100%;
+
+
+    
+ 
+}
+
+
+.bg-vulnerabilidad1 {
+    
+   background-image:  background-repeat: no-repeat;  background-size: cover;
+    background-position: center 40%;
+    height: 100%;
+    transition: 2s ease all;
+}
+
+.bg-vulnerabilidad2 {
+    
+    background-image: url(../imgs/vulnerabilidad2.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: center -14.5em;
+    height: 100%;
+   
+}
+
+
+/* BLUR*/
+
+.bg-vulnerabilidad1  {
+      animation: blur 10s ease 0s ;
+  -webkit-animation: blur 10s ease 0s ;
+  -moz-animation: blur 10s ease 0s ;
+    -webkit-animation-fill-mode: forwards;
+   
+}
+
+.bg-vulnerabilidad2 {
+
+    -webkit-animation-fill-mode: forwards;
+    
+}
+
+
+/* ANIMACIONES*/
+
+/* BLUR EN BG IMGS. Sin uso por el momento */
+
+@keyframes blur {
+  0%, 20%{
+      
+    -webkit-filter: blur(10px);
+    background-image: url(../imgs/vulnerabilidad1.jpg);
+  }  
+    
+     20%, 45%{
+      
+    -webkit-filter: blur(0px);
+    background-image: url(../imgs/vulnerabilidad1.jpg);
+  }  
+    
+     45%, 100%{
+      
+    -webkit-filter: blur(0px);
+    background-image: url(../imgs/vulnerabilidad1.jpg);
+  }  
+    
+    
+
+    }
+
+
+
+
+
+
+.bg-vulnerabilidad3 {
+    
+    background-image: url(../imgs/vulnerabilidad3.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: center;
+    height: 100%;
+       border-right: 5px solid; 
+    border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;
+    border-left: white solid 4px;
+}
+.bg-vulnerabilidad4 {
+    
+    background-image: url(../imgs/vulnerabilidad4.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: center;
+    height: 100%;
+       border-right: 5px solid; 
+    border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;
+    border-left: white solid 4px;
+}
+.bg-vulnerabilidad5 {
+    
+    background-image: url(../imgs/vulnerabilidad5.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: center;
+    height: 100%;
+       border-right: 5px solid; 
+    border-image: url(../imgs/border.png) 0% 100% 0% 0% repeat;
+    border-left: white solid 4px;
+}
+.bg-vulnerabilidad6 {
+    
+    background-image: url(../imgs/vulnerabilidad6.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.bg-garantia {
+    
+    background-image: url(../imgs/garantia-derechos.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: -1px -150px;
+    height: 100%;
+      border-left: 5px solid; 
+    border-image: url(../imgs/border.png) 0% 0% 0% 100% repeat;
+    border-left: white solid 4px;
+   
+}
+
+
+.bg-fin {
+    
+    background-image: url(../imgs/fin1.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: -4px center;
+    height: 100%;
+    
+    border-image: url(../imgs/border.png) 0% 0% 0% 100% repeat;
+    border-left: white solid 5px;
+    
+    -webkit-transition: background-image 1.5s ease-in-out;
+transition: background-image 1.5s ease-in-out;
+   
+}
+
+
+.bg-fin2 {
+    
+    background-image: url(../imgs/fin3.jpg);   background-repeat: no-repeat;  background-size: cover;
+    background-position: -4px center;
+    height: 100%;
+    
+    border-image: url(../imgs/border.png) 0% 0% 0% 100% repeat;
+    border-left: white solid 5px;
+    
+    -webkit-transition: background-image 1.5s ease-in-out;
+transition: background-image 1.5s ease-in-out;
+   
+}
+
+/* Border de imágenes. Sirve como fallback si no carga el image-border con efecto de pincel*/
+.brush-border {
+    
+    border-right: 5px solid #fff;
+   
+}
+
+
+
+/* Fondo textos diapo 13*/
+.cuadro-bl {height: 43vh; background-color: white; color: black !important; }
+
+/* Subrayado amarillo diapo 13*/
+
+.sb-amarillo {
+    
+      text-decoration: none;
+    border-bottom: 10px solid #FEDA56;
+    cursor: pointer;
+    
+    
+   /*  text-decoration:underline;
+    -webkit-text-decoration-color: #FEDA56;    
+    text-decoration-color: #FEDA56;
+    text-decoration-thickness: 9px;
+    cursor: pointer;*/
+    
+}
+
+.sacude:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+   
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+
+/* Cuadro diapo 15*/
+
+.alert-amarillo {
+
+    background-color: #FEDA56;
+   
+    
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+	        animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+
+
+/* Elementos diapo 17 y 18 SEQUIA*/
+
+.sequia-100 {
+     height: calc(100vh - 21.5em) !important;
+    
+}
+
+.cl-alimentacion  {
+    background-color: #98e482;
+        border-radius: 50%;
+    width: 15em;
+    height: 15em; 
+     transition: 1s ;
+}
+
+.cl-salud, .cl-saludb {
+    background-color: #5dd4e5;
+        border-radius: 50%;
+    width: 15em;
+    height: 15em; 
+      transition: 1s ;
+   
+}
+
+.cl-educacion, .cl-educacionb {
+    background-color: #fdd956;
+        border-radius: 50%;
+    width: 15em;
+    height: 15em; 
+     transition: 1s ;
+}
+
+.cl-alimentacion, .cl-salud, .cl-educacion, .cl-saludb, .cl-educacionb {
+
+   border: 4px solid white;
+     border-radius:100%;
+    color: white;
+   
+ 
+    }
+
+
+cl-alimentacion:hover  {
+    background-color: white;
+  
+         color: transparent !important;
+    z-index: 111;
+    
+}
+
+
+.cl-alimentacionpoint {
+    
+     cursor: pointer;
+}
+
+.salud-hover {
+    
+       cursor: pointer;
+}
+
+.pad-salud, .pad-alimentacion, .pad-educacion {
+    
+   width: 12em;
+    height: 12em;
+   
+    font-size: 0.45em !important;
+}
+
+
+.sequia h5 {
+    
+    font-size: 1.3em;
+
+    font-weight: 800;
+}
+
+
+
+.margen-17 {
+        
+        margin-bottom: -3.5em
+    }
+
+.sequia .col-4 {
+    
+    max-width: 30%;
+}
+
+.flecha-amarilla img {
+
+    
+    width: 2.5em; height: auto;
+
+}
+
+
+/* Elementos diapo 19, 20 y 21 DERECHO A... Y DERECHO A LA SALUD*/
+
+.cd-mundo-19 {
+    
+    background-color: #a0d993;
+    padding: 1em;
+    color: white !important;
+   
+    
+}
+
+.cd-mundo-20 {
+    
+    background-color: #5dd4e5;
+    padding: 1em;
+    color: white !important;
+   
+    
+}.cd-mundo-21 {
+    
+    background-color: #feca57;
+    padding: 1em;
+    color: white !important;
+   
+    
+}
+
+
+
+.cd-ninos-19 {
+    
+ 
+    padding: 1em;
+    color: white !important;
+   
+    
+}
+
+ .cd-ninos-19 h3 {
+        
+  font-size: 1.8em;
+    } 
+
+#flecha-19, #flecha-20, #flecha-21 {
+    
+    cursor: pointer;
+}
+
+
+.meta1 {
+    
+    width: 43.75em; height: auto
+}
+
+.d23 .p20 {
+    
+     font-weight: 300 !important;
+}
+
+.d24 .p20 {
+    
+     font-weight: 300 !important;
+}
+
+.d25 .p20 {
+    
+     font-weight: 300 !important;
+}
+
+
+/* Elementos diapos MAPAS*/
+
+
+.cajas-mapas {
+    
+position: absolute; 
+    
+    bottom: 5%;
+    z-index: -20;
+    
+} 
+
+.cajas-bolivia {
+    
+position: absolute; 
+    
+    top: 30%;
+    left: 70%;
+    z-index: -20;
+    
+} 
+
+.pointer {
+    
+    cursor: pointer;
+}
+
+
+.mapa-glasgow {
+    
+    width: 23em;
+}
+
+.pin-glasgow {
+    
+position: absolute; top: 35%; left: 23%; height: 1.5em; 
+}
+
+.pin-glasgow2 {
+    
+position: absolute; top: 7%; right: 55.5%; height: 1.5em; 
+}
+
+.pin-glasgow3 {
+    
+position: absolute; bottom: 23%; left: 15.5%; height: 1.5em; 
+}
+
+.glasgow-neg {
+    
+    margin-left: -8em;
+}
+
+.width-glasgow {
+    
+    width: 44%
+}
+
+.caja-amarilla {
+    
+    background-color: #fdd956; border: 2px white solid;
+    cursor: pointer;
+    color: #7f7551;
+}
+
+
+.caja1ok {
+    
+     background-color: #ff7466; border: 2px white solid;
+    color: white;
+    
+}
+
+#respuesta-31 {
+    font-size: 2em;
+}
+/* Elementos diapo 35*/
+
+.nohay h4 {
+    
+    font-weight: 800;
+    font-size: 3.25em;
+}
+
+.pop-flecha {
+    
+    position: absolute;
+    top: 47%;
+    right: 3%;
+    z-index: 40;
+   
+}
+
+
+/* Elementos diapo FLOR*/
+
+.img-flor1 {
+    
+   width: 50em; margin-top: 3.3em;
+    margin-left: -4em;     
+}
+.img-meta {
+    
+   width: 50em;
+      
+}
+
+
+
+
+.img-flor {
+    
+   width: 25em; margin-top: 3.3em;
+  
+       
+}
+
+.marg-flor {
+    
+    margin: 5em 0 0 0.8em;
+}
+
+.flor1 {
+    
+    width: 6.875em; position: absolute; bottom: 16.5%; right: 40.5%;
+}
+.flor2 {
+    
+    width: 10em; position: absolute; bottom: 12.4%; right: 48%;
+}
+.flor3 {
+    
+    width: 11.25em; position: absolute; bottom: 27.5%; left: 31.5%;
+}
+.flor4 {
+    
+    width: 6.875em;  position: absolute; bottom: 51%; right: 54.2%;
+}
+.flor5 {
+    width: 10em;  position: absolute; bottom: 55%; right: 43.59%;
+    
+}
+.flor6 {
+    
+    width: 6.875em;  position: absolute; bottom: 51%; right: 36.59%;
+}
+.flor7 {
+    
+    width: 11.25em; position: absolute; bottom: 27.5%; right: 31.5%;
+}
+
+
+/* Curtom DELAYS para Animate.css */
+
+.delay-05 {
+    
+   -webkit-animation-delay: 0.5s;
+    
+   animation-delay: 0.5s;
+}
+
+.delay-105 {
+    
+   -webkit-animation-delay: 1.5s;
+    
+   animation-delay: 1.5s;
+}
+
+.delay-205 {
+    
+   -webkit-animation-delay: 2.5s;
+    
+   animation-delay: 2.5s;
+}
+
+.delay-305 {
+    
+   -webkit-animation-delay: 3.5s;
+    
+   animation-delay: 3.5s;
+}
+
+.delay-405 {
+    
+   -webkit-animation-delay: 4.5s;
+    
+   animation-delay: 4.5s;
+}
+
+.delay-505 {
+    
+   -webkit-animation-delay: 5.5s;
+    
+   animation-delay: 5.5s;
+}
+
+.delay-600 {
+    
+   -webkit-animation-delay: 6s;
+    
+   animation-delay: 6s;
+}
+
+.delay-605 {
+    
+   -webkit-animation-delay: 6.5s;
+    
+   animation-delay: 6.5s;
+}
+
+.delay-700 {
+    
+   -webkit-animation-delay: 7s;
+    
+   animation-delay: 7s;
+}
+
+.delay-705 {
+    
+   -webkit-animation-delay: 7.5s;
+    
+   animation-delay: 7.5s;
+}
+
+.delay-800 {
+    
+   -webkit-animation-delay: 8s;
+    
+   animation-delay: 8s;
+}
+
+.delay-805 {
+    
+   -webkit-animation-delay: 8.5s;
+    
+   animation-delay: 8.5s;
+}
+
+.delay-900 {
+    
+   -webkit-animation-delay: 9s;
+    
+   animation-delay: 9s;
+}
+
+.delay-905 {
+    
+   -webkit-animation-delay: 9.5s;
+    
+   animation-delay: 9.5s;
+}
+
+.delay-1000 {
+    
+   -webkit-animation-delay: 10s;
+    
+   animation-delay: 10s;
+}
+.delay-1005 {
+    
+   -webkit-animation-delay: 10.5s;
+    
+   animation-delay: 10.5s;
+}
+
+.delay-1100 {
+    
+   -webkit-animation-delay: 11s;
+    
+   animation-delay: 11s;
+}
+
+.delay-1105 {
+    
+   -webkit-animation-delay: 11.5s;
+    
+   animation-delay: 11.5s;
+}
+
+
+
+.delay-1200 {
+    
+   -webkit-animation-delay: 12s;
+    
+   animation-delay: 12s;
+}
+
+.delay-1205 {
+    
+   -webkit-animation-delay: 12.5s;
+    
+   animation-delay: 12.5s;
+}
+
+.delay-1300 {
+    
+   -webkit-animation-delay: 13s;
+    
+   animation-delay: 13s;
+}
+
+.delay-1305 {
+    
+   -webkit-animation-delay: 13s;
+    
+   animation-delay: 13.5s;
+}
+
+.delay-1400 {
+    
+   -webkit-animation-delay: 14s;
+    
+   animation-delay: 14s;
+}
+
+.delay-1500 {
+    
+   -webkit-animation-delay: 15s;
+    
+   animation-delay: 15s;
+}
+
+.delay-1550 {
+    
+   -webkit-animation-delay: 15.5s;
+    
+   animation-delay: 15.5s;
+}
+
+.delay-1600 {
+    
+   -webkit-animation-delay: 16s;
+    
+   animation-delay: 16s;
+}
+
+.delay-1650 {
+    
+   -webkit-animation-delay: 16.5s;
+    
+   animation-delay: 16.5s;
+}
+
+.delay-1700 {
+    
+   -webkit-animation-delay: 17s;
+    
+   animation-delay: 17s;
+}
+
+.delay-1750 {
+    
+   -webkit-animation-delay: 17.5s;
+    
+   animation-delay: 17.5s;
+}
+
+.delay-1800 {
+    
+   -webkit-animation-delay: 18s;
+    
+   animation-delay: 18s;
+}
+
+.delay-1850 {
+    
+   -webkit-animation-delay: 18.5s;
+    
+   animation-delay: 18.5s;
+}
+
+.delay-1900 {
+    
+   -webkit-animation-delay: 19s;
+    
+   animation-delay: 19s;
+}
+
+
+.delay-1950 {
+    
+   -webkit-animation-delay: 19.5s;
+    
+   animation-delay: 19.5s;
+}
+
+.delay-2000 {
+    
+   -webkit-animation-delay: 20s;
+    
+   animation-delay: 20s;
+}
+
+.delay-2100 {
+    
+   -webkit-animation-delay: 21s;
+    
+   animation-delay: 21s;
+}
+
+
+.delay-2150 {
+    
+   -webkit-animation-delay: 21.5s;
+    
+   animation-delay: 21.5s;
+}
+
+.delay-2200 {
+    
+   -webkit-animation-delay: 22s;
+    
+   animation-delay: 22s;
+}
+
+
+.delay-2250 {
+    
+   -webkit-animation-delay: 22.5s;
+    
+   animation-delay: 22.5s;
+}
+
+
+
+.delay-2300 {
+    
+   -webkit-animation-delay: 22s;
+    
+   animation-delay: 22s;
+}
+
+.delay-2400 {
+    
+   -webkit-animation-delay: 24s;
+    
+   animation-delay: 24s;
+}
+
+.delay-2500 {
+    
+   -webkit-animation-delay: 25s;
+    
+   animation-delay: 25s;
+}
+
+.delay-2600 {
+    
+   -webkit-animation-delay: 26s;
+    
+   animation-delay: 26s;
+}
+
+.delay-2800 {
+    
+   -webkit-animation-delay: 28s;
+    
+   animation-delay: 28s;
+}
+
+
+.delay-out-7 {
+     -webkit-animation-delay: 7s;
+     animation-delay: 7s;
+}
+
+
+
+  /* Elementos diapo Encuesta */
+
+/* Generación Z translate X */
+
+.genz{
+  animation: genzanim linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: genzanim linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: genzanim linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: genzanim linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: genzanim linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+    animation-delay: 11s;
+    -webkit-animation-delay: 11s;
+}
+
+@keyframes genzanim{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  100% {
+    transform:  translate(0px,-24em)  ;
+  }
+}
+
+@-moz-keyframes genzanim{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,-24em)  ;
+  }
+}
+
+@-webkit-keyframes genzanim {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,-24em)  ;
+  }
+}
+
+@-o-keyframes genzanim {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,-24em)  ;
+  }
+}
+
+@-ms-keyframes genzanim {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,-24em)  ;
+  }
+}
+
+
+.rec-amarillo{
+  animation: recamarilloani ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 100% 100%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: recamarilloani ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 100% 100%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: recamarilloani ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 100% 100%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: recamarilloani ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 100% 100%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: recamarilloani ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 100% 100%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+    
+      animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+
+@keyframes recamarilloani{
+  0% {
+    transform:  scaleY(0.00) ;
+  }
+  100% {
+    transform:  scaleY(1.00) ;
+  }
+}
+
+@-moz-keyframes recamarilloani{
+  0% {
+    -moz-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -moz-transform:  scaleY(1.00) ;
+  }
+}
+
+@-webkit-keyframes recamarilloani {
+  0% {
+    -webkit-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -webkit-transform:  scaleY(1.00) ;
+  }
+}
+
+@-o-keyframes recamarilloani {
+  0% {
+    -o-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -o-transform:  scaleY(1.00) ;
+  }
+}
+
+@-ms-keyframes recamarilloani {
+  0% {
+    -ms-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -ms-transform:  scaleY(1.00) ;
+  }
+}
+
+.rec-verde {
+  animation: recverdeani ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 100% 100%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: recverdeani ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 100% 100%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: recverdeani ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 100% 100%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: recverdeani ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 100% 100%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: recverdeani ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 100% 100%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+          animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+    
+}
+
+@keyframes recverdeani{
+  0% {
+    transform:  scaleY(0.00) ;
+  }
+  100% {
+    transform:  scaleY(1.00) ;
+  }
+}
+
+@-moz-keyframes recverdeani{
+  0% {
+    -moz-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -moz-transform:  scaleY(1.00) ;
+  }
+}
+
+@-webkit-keyframes recverdeani {
+  0% {
+    -webkit-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -webkit-transform:  scaleY(1.00) ;
+  }
+}
+
+@-o-keyframes recverdeani {
+  0% {
+    -o-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -o-transform:  scaleY(1.00) ;
+  }
+}
+
+@-ms-keyframes recverdeani {
+  0% {
+    -ms-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -ms-transform:  scaleY(1.00) ;
+  }
+}
+
+.rec-naranja{
+  animation: recnaranjaani ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 100% 100%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: recnaranjaani ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 100% 100%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: recnaranjaani ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 100% 100%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: recnaranjaani ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 100% 100%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: recnaranjaani ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 100% 100%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+          animation-delay: 14s;
+    -webkit-animation-delay: 14s;
+}
+
+@keyframes recnaranjaani{
+  0% {
+    transform:  scaleY(0.00) ;
+  }
+  100% {
+    transform:  scaleY(1.00) ;
+  }
+}
+
+@-moz-keyframes recnaranjaani{
+  0% {
+    -moz-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -moz-transform:  scaleY(1.00) ;
+  }
+}
+
+@-webkit-keyframes recnaranjaani {
+  0% {
+    -webkit-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -webkit-transform:  scaleY(1.00) ;
+  }
+}
+
+@-o-keyframes recnaranjaani {
+  0% {
+    -o-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -o-transform:  scaleY(1.00) ;
+  }
+}
+
+@-ms-keyframes recnaranjaani {
+  0% {
+    -ms-transform:  scaleY(0.00) ;
+  }
+  100% {
+    -ms-transform:  scaleY(1.00) ;
+  }
+}
+
+
+/* Velocidad del carrusel */
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 0.5s ease !important;
+  transition: transform 0.5s ease !important;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease !important;
+}
+
+
+
+
+/* Animación texto diapo 9 final con cuadros blancos */
+.text-ani {
+
+}
+
+.text-ani li {
+ 
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  -ms-animation: topToBottom 18s ease;
+  -webkit-animation: topToBottom 18s ease;
+  animation: topToBottom 18s ease;
+    animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards; 
+}
+
+.text-ani li:nth-child(2){
+  -ms-animation-delay: 9.3s;
+  -webkit-animation-delay: 9.3s;
+  animation-delay: 9.3s;
+}
+
+@-webkit-keyframes topToBottom {
+  0%, 90% {opacity: 1} /* visible for 1s */
+ 
+
+95%, 100% {opacity: 0} /* hidden for 4s */
+}
+
+
+
+#cara1 {
+    width: 12em;
+  position:absolute;
+  left:0;
+    animation-name: fadeCaras;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+    animation-duration: 4s;
+        -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeCaras {
+   0%, 30% {opacity: 1} /* visible for 1s */
+ 
+
+70%, 100% {opacity: 0} /* hidden for 4s */
+}
+
+#cara2 {
+    width: 12em;
+  position:absolute;
+  left:0;
+    animation-name: fadeCaras;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+    animation-duration: 4s;
+        -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+
+
+
+
+
+
+
+/* Animación CARAS Final */
+
+
+.slider-caras {
+    
+    width: 19em;
+    height: 21em;
+   margin-left: 2em;
+  background: center;
+    transition: background 0.2s ease;
+    animation: slideCaras 10s;
+    animation-fill-mode: forwards;
+       -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slideCaras {
+
+    20%{
+          background: url(../imgs/cara1.svg) center no-repeat;
+    }
+    
+    40%{
+          background: url(../imgs/cara2.svg) center no-repeat;
+    }
+    
+     60%{
+          background: url(../imgs/cara3.svg) center no-repeat;
+    }
+    
+     80%{
+          background: url(../imgs/cara4.svg) center no-repeat;
+    }
+    
+      100%{
+          background: url(../imgs/cara5.svg) center no-repeat;
+    }
+    
+    
+}
+
+
+/* Animación CARAS Final */
+
+
+
+
+    
+      
+
+
+    
+    .mano-anim {
+	-webkit-animation: slide-right1 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: slide-right1 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+        z-index: 100;
+     
+}
+   
+
+@-webkit-keyframes slide-right1 {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+}
+@keyframes slide-right1 {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+}
+
+
+.mano-anim2 {
+	
+	-webkit-animation: slide-left1 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: slide-left1 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+
+}
+   
+
+@-webkit-keyframes slide-left1 {
+  0% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+}
+@keyframes slide-left1 {
+  0% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+} 
+
+
+.mano-izq {
+	-webkit-animation: slide-right 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: slide-right 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+        z-index: 100;
+     
+}
+   
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  100% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+}
+
+
+.mano-der {
+	
+	-webkit-animation: slide-left 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: slide-left 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+
+}
+   
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+}
+
+
+.flecha-right-trans {
+    
+      transition: translateX() 1s ease;
+}
+
+.flecha-right {
+	-webkit-animation: flecha-right 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: flecha-right 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;
+        z-index: 100;
+     
+}
+   
+
+@-webkit-keyframes flecha-right {
+  0% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+@keyframes flecha-right {
+  0% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.flecha-down {
+	-webkit-animation: flecha-down 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: flecha-down 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate-reverse both;
+        z-index: 100;
+     
+}
+   
+
+@-webkit-keyframes flecha-down {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@keyframes flecha-down {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+
+    
+    
+
+
+filter: blur(3px);
+-webkit-filter: blur(3px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
+filter: url(blur.svg#blur);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+
+
+
